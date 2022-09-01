@@ -1,0 +1,15 @@
+<h1>Middle Earth Chars</h1>
+
+<button (click)="fnDeleteChar()">borrar personaje</button>
+<h3 *ngIf="chardeleted; else full">{{ deleted }}</h3>
+
+<h3></h3>
+<ng-template #full>
+  <h3>{{ deletedEmpty }}</h3>
+</ng-template>
+
+<ul>
+  <li *ngFor="let character of Chars">
+    {{ character }}
+  </li>
+</ul>
