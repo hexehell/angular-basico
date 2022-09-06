@@ -1,0 +1,14 @@
+<form (ngSubmit)="fnAdd()">
+    <input type="text" placeholder="Name"  name="Name" [(ngModel)]="Def.Name" id="">
+
+    <!-- [value]="Def.Name" (input)="fnWritingName($event)"  -->
+
+    <input type="text" placeholder="Skill"  name="Skill" [(ngModel)]="Def.Skill"  id="">
+
+    <input type="number" placeholder="kills"  name="kills" [(ngModel)]="Def.kills"  id="">
+
+
+    <!-- [value]="Def.Skill" -->
+
+    <button type="submit">Add</button>
+</form>

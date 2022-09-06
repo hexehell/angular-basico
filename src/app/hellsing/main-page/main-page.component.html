@@ -1,0 +1,17 @@
+<h1>Hellsing Ultimate</h1>
+<hr>
+<div class="row">
+    <div class="col">
+        <h3>Chars</h3>
+        <hr>
+        
+        <app-characters  [Characters]="Chars"></app-characters>
+    </div>
+    <div class="col">
+        <h3>Add</h3>
+        <hr>
+
+        <app-char-add (onNewChar)="fnAddNewChar($event)" [Default]="Def" ></app-char-add>
+
+    </div>
+</div>
